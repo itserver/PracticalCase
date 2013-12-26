@@ -73,7 +73,7 @@ function inicializarElementos(){
 	$("#busquedaEnSubconjunto").autocomplete({
 		source: function(request, response) {
 			$.ajax({
-					url: "http://www.itserver.es/ITServer/rest/subsets/searchItemsInSubset/subset/pruebaMSSSI/termToSearch/" + request.term + "?numberOfElements=100&language=en",
+					url: "http://www.itserver.es/ITServer/rest/subsets/searchItemsInSubset/subset/224/termToSearch/" + request.term + "?numberOfElements=100&language=en",
 					dataType: "json",
 					beforeSend: function(req) {
 						req.setRequestHeader('Authorization', 'Basic ' + $.base64.encode(userpassword));
